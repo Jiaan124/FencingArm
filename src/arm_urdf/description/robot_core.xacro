@@ -26,58 +26,152 @@
 
     <joint name="base_joint" type="fixed">
         <parent link ="base_link"/>
-        <child link="shoulder_link"/>
+        <child link="shoulder_base"/>
         <origin xyz="0 0 1"/>
     </joint>
 
     <!-- SHOULDER -->
-    <link name = "shoulder_link">
-        <visual>
-            <origin xyz="0 0 -0.05"/>
+    <link name = "shoulder_base">
+        <!-- <visual>
+            <origin xyz="0 0 -0.5"/>
             <geometry>
-                <box size="0.1 0.1 0.1"/>
+                <box size="0.01 0.01 1"/>
             </geometry>
             <material name="blue"/>
-        </visual>
+        </visual> -->
     </link>
 
 
 
-    <joint name="shoulder_joint" type="revolute">
-        <parent link ="shoulder_link"/>
-        <child link="bicept_link"/>
-        <origin xyz="0 0 -0.1" rpy="0 0 0"/>
-        <axis xyz="0 1 0" rpy="0 0 0"/>
-        <limit lower="0" upper="${pi/2}" velocity ="100" effort = "100"/>
+   <joint name="shoulder_joint" type="revolute">
+        <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>    
+        <parent link ="shoulder_base"/>
+        <child link="shoulder_link"/>
+        <axis xyz="0 0 1" />
+        <limit lower="${-pi/2}" upper="${pi/4}" velocity ="100" effort = "100"/>
     </joint>
 
 
-
-    <link name = "bicept_link">
-        <visual>
+    <link name = "shoulder_link">
+        <!-- <visual>
             <origin xyz="0 0 0.5"/>
             <geometry>
                 <box size="0.01 0.01 0.1"/>
             </geometry>
             <material name="orange"/>
-        </visual>
+        </visual> -->
     </link>
 
     <joint name="bicept_joint" type="revolute">
+        <parent link ="shoulder_link"/>
+        <child link="bicept_link"/>
+        <origin xyz="0.1 0 0" rpy="0 ${pi/2} 0"/>
+        <axis xyz="0 0 1" />
+        <limit lower="${-pi/2}" upper="${pi/2}" velocity ="100" effort = "100"/>
+    </joint>
+    <!-- <joint name="bicept_joint" type="fixed">
         <parent link ="bicept_link"/>
         <child link="elbow_link"/>
-        <origin xyz="0 0 0.1" rpy="0 0 0"/>
-        <axis xyz="0 1 0" rpy="0 0 0"/>
-        <limit lower="0" upper="${pi/2}" velocity ="100" effort = "100"/>
-    </joint>
+        <origin xyz="0 0.5 0"/>
+    </joint>  -->
 
-    <link name = "elbow_link">
-        <visual>
+    <link name = "bicept_link">
+        <!-- <visual>
             <origin xyz="0 0 0.05"/>
             <geometry>
                 <box size="0.1 0.11 0.1"/>
             </geometry>
             <material name="white"/>
-        </visual>
+        </visual> -->
     </link>
+
+    <joint name="elbow_joint" type="revolute">
+        <parent link ="bicept_link"/>
+        <child link="elbow_link"/>
+        <origin xyz="0 0 0.293" rpy="0 ${-pi/2} 0"/>
+        <axis xyz="0 0 1" />
+        <limit lower="0" upper="2.3562" velocity ="100" effort = "100"/>
+    </joint>
+
+    <link name = "elbow_link">
+        <!-- <visual>
+            <origin xyz="0 0 0.05"/>
+            <geometry>
+                <box size="0.1 0.11 0.1"/>
+            </geometry>
+            <material name="white"/>
+        </visual> -->
+    </link>
+
+    <joint name="forearm_joint" type="revolute">
+        <parent link ="elbow_link"/>
+        <child link="forearm_link"/>
+        <origin xyz="0.1 0 0" rpy="0 ${pi/2} 0"/>
+        <axis xyz="0 0 1" />
+        <limit lower="${-pi/2}" upper="${pi/2}" velocity ="100" effort = "100"/>
+    </joint>
+
+    <link name = "forearm_link">
+        <!-- <visual>
+            <origin xyz="0 0 0.05"/>
+            <geometry>
+                <box size="0.1 0.11 0.1"/>
+            </geometry>
+            <material name="white"/>
+        </visual> -->
+    </link>
+
+    <joint name="wrist_joint1" type="revolute">
+        <parent link ="forearm_link"/>
+        <child link="wrist_link1"/>
+        <origin xyz="0 0 0.2" rpy="${-pi/2} 0 0"/>
+        <axis xyz="0 0 1" />
+        <limit lower="${-pi/2}" upper="${pi/2}" velocity ="100" effort = "100"/>
+    </joint>
+
+    <link name = "wrist_link1">
+        <!-- <visual>
+            <origin xyz="0 0 0.05"/>
+            <geometry>
+                <box size="0.1 0.11 0.1"/>
+            </geometry>
+            <material name="white"/>
+        </visual> -->
+    </link>
+
+    <joint name="wrist_joint2" type="revolute">
+        <parent link ="wrist_link1"/>
+        <child link="wrist_link2"/>
+        <origin xyz="0 0 0" rpy="0 ${-pi/2} 0"/>
+        <axis xyz="0 0 1" />
+        <limit lower="${-pi/2}" upper="${pi/2}" velocity ="100" effort = "100"/>
+    </joint>
+
+    <link name = "wrist_link2">
+        <!-- <visual>
+            <origin xyz="0 0 0.05"/>
+            <geometry>
+                <box size="0.1 0.11 0.1"/>
+            </geometry>
+            <material name="white"/>
+        </visual> -->
+    </link>
+
+    <joint name="tip_joint" type="fixed">
+        <parent link ="wrist_link2"/>
+        <child link="tip"/>
+        <origin xyz="0 -1 0"/>
+    </joint>
+
+    <link name = "tip">
+        <!-- <visual>
+            <origin xyz="0 0 0.05"/>
+            <geometry>
+                <box size="0.1 0.11 0.1"/>
+            </geometry>
+            <material name="white"/>
+        </visual> -->
+    </link>
+
+
 </robot>
