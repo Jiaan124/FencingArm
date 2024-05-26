@@ -1,0 +1,5 @@
+[0.006s] Invoking command in '/home/jiaan/arm_project/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/articubot_one -- -j16 -l16
+[0.020s] [0mCMake Error: The source directory "/home/jiaan/arm_project/src/articubot_one" does not exist.
+[0.020s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.021s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.023s] Invoked command in '/home/jiaan/arm_project/build/articubot_one' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/articubot_one -- -j16 -l16
