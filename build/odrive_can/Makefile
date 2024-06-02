@@ -315,17 +315,17 @@ odrive_can__rosidl_typesupport_cpp/fast:
 .PHONY : odrive_can__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_odrive_can
+# Target rules for targets named ament_cmake_python_symlink_odrive_can
 
 # Build rule for target.
-ament_cmake_python_copy_odrive_can: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_odrive_can
-.PHONY : ament_cmake_python_copy_odrive_can
+ament_cmake_python_symlink_odrive_can: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_odrive_can
+.PHONY : ament_cmake_python_symlink_odrive_can
 
 # fast build rule for target.
-ament_cmake_python_copy_odrive_can/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_odrive_can.dir/build.make CMakeFiles/ament_cmake_python_copy_odrive_can.dir/build
-.PHONY : ament_cmake_python_copy_odrive_can/fast
+ament_cmake_python_symlink_odrive_can/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_odrive_can.dir/build.make CMakeFiles/ament_cmake_python_symlink_odrive_can.dir/build
+.PHONY : ament_cmake_python_symlink_odrive_can/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_odrive_can_egg
@@ -1368,7 +1368,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_odrive_can_egg"
-	@echo "... ament_cmake_python_copy_odrive_can"
+	@echo "... ament_cmake_python_symlink_odrive_can"
 	@echo "... odrive_can"
 	@echo "... odrive_can__cpp"
 	@echo "... odrive_can__py"

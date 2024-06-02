@@ -9,7 +9,7 @@
 /home/jiaan/arm_project/build/odrive_can/CMakeFiles/odrive_can__rosidl_typesupport_c.dir
 /home/jiaan/arm_project/build/odrive_can/CMakeFiles/odrive_can__rosidl_typesupport_introspection_cpp.dir
 /home/jiaan/arm_project/build/odrive_can/CMakeFiles/odrive_can__rosidl_typesupport_cpp.dir
-/home/jiaan/arm_project/build/odrive_can/CMakeFiles/ament_cmake_python_copy_odrive_can.dir
+/home/jiaan/arm_project/build/odrive_can/CMakeFiles/ament_cmake_python_symlink_odrive_can.dir
 /home/jiaan/arm_project/build/odrive_can/CMakeFiles/ament_cmake_python_build_odrive_can_egg.dir
 /home/jiaan/arm_project/build/odrive_can/CMakeFiles/odrive_can__rosidl_generator_py.dir
 /home/jiaan/arm_project/build/odrive_can/CMakeFiles/odrive_can__rosidl_typesupport_fastrtps_c__pyext.dir
