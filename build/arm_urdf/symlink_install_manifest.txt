@@ -33,6 +33,14 @@
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/rsp.launch.py
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/worlds/empty.world
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/worlds/obstacles.world
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/base.stl
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/bicept.stl
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/elbow.stl
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/forearm.stl
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/shoulder.stl
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/shoulder_base.stl
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/wrist_1.stl
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/wrist_2.stl
 /home/jiaan/arm_project/install/arm_urdf/share/ament_index/resource_index/package_run_dependencies/arm_urdf
 /home/jiaan/arm_project/install/arm_urdf/share/ament_index/resource_index/parent_prefix_path/arm_urdf
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/environment/ament_prefix_path.sh

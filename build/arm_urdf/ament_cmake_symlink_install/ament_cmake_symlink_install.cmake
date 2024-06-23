@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/arm_urdf")
-ament_cmake_symlink_install_directory("/home/jiaan/arm_project/src/arm_urdf" DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/arm_urdf")
+# install(DIRECTORY "config" "description" "launch" "worlds" "meshes" "DESTINATION" "share/arm_urdf")
+ament_cmake_symlink_install_directory("/home/jiaan/arm_project/src/arm_urdf" DIRECTORY "config" "description" "launch" "worlds" "meshes" "DESTINATION" "share/arm_urdf")
 
 # install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arm_urdf" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arm_urdf" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

@@ -309,3 +309,57 @@ endfunction()
 message(STATUS "Execute custom install script")
 
 # begin of custom install code
+
+# install(FILES "odrive_hardware_interface.xml" "DESTINATION" "share/odrive_ros2_control/")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "odrive_hardware_interface.xml" "DESTINATION" "share/odrive_ros2_control/")
+
+# install("TARGETS" "odrive_ros2_control_plugin" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
+include("/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/odrive_ros2_control/environment")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/odrive_ros2_control/environment")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/odrive_ros2_control/environment")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/odrive_ros2_control/environment")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/odrive_ros2_control/environment")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/odrive_ros2_control/environment")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/odrive_ros2_control/environment")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/odrive_ros2_control/environment")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/odrive_ros2_control")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/odrive_ros2_control")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/odrive_ros2_control")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/odrive_ros2_control")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/odrive_ros2_control")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/odrive_ros2_control")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/odrive_ros2_control")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/odrive_ros2_control")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/odrive_ros2_control")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/odrive_ros2_control")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_index/share/ament_index/resource_index/packages/odrive_ros2_control" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_index/share/ament_index/resource_index/packages/odrive_ros2_control" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_index/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_ros2_control" "DESTINATION" "share/ament_index/resource_index/hardware_interface__pluginlib__plugin")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_index/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_ros2_control" "DESTINATION" "share/ament_index/resource_index/hardware_interface__pluginlib__plugin")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/odrive_ros2_control/cmake")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/odrive_ros2_control/cmake")
+
+# install(FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_core/odrive_ros2_controlConfig.cmake" "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_core/odrive_ros2_controlConfig-version.cmake" "DESTINATION" "share/odrive_ros2_control/cmake")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_core/odrive_ros2_controlConfig.cmake" "/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_core/odrive_ros2_controlConfig-version.cmake" "DESTINATION" "share/odrive_ros2_control/cmake")
+
+# install(FILES "/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control/package.xml" "DESTINATION" "share/odrive_ros2_control")
+ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control" FILES "/home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control/package.xml" "DESTINATION" "share/odrive_ros2_control")

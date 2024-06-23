@@ -23,11 +23,11 @@
     <!-- BASE -->
     <link name="base_link">
         <visual>
-            <origin xyz="0 0 0.5"/>
+            <origin xyz="-0.6052 -0.31115 0"/>
             <geometry>
-                <box size="0.05 0.05 1"/>
+                <mesh filename="package://arm_urdf/meshes/base.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
-            <material name="blue"/>
+            <material name="white"/>
         </visual>
         <collision>
             <origin xyz="0 0 0.5"/>
@@ -37,17 +37,23 @@
         </collision>
     </link>
 
+    <!-- SETS THE HEIGHT OF THE ARM -->
     <joint name="base_joint" type="fixed">
         <parent link ="base_link"/>
         <child link="shoulder_base"/>
-        <origin xyz="0 0 1"/>
+        <origin xyz="0 0 1.175"/>
     </joint>
 
     <!-- SHOULDER -->
     <link name = "shoulder_base">
-        
+        <visual>
+            <origin xyz="-0.0425 -0.09775 -0.05"/>
+            <geometry>
+                <mesh filename="package://arm_urdf/meshes/shoulder_base.stl" scale="0.001 0.001 0.001 "/>
+            </geometry>
+            <material name="white"/>
+        </visual>
     </link>
-
 
 
    <joint name="shoulder_joint" type="revolute">
@@ -61,16 +67,16 @@
 
     <link name = "shoulder_link">
         <visual>
-            <origin xyz="0.05 0 0"/>
+            <origin xyz="0 -0.075 0.075" rpy ="0 ${pi/2} 0"/>
             <geometry>
-                <box size="0.1 0.05 0.05"/>
+                <mesh filename="package://arm_urdf/meshes/shoulder.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
             <material name="white"/>
         </visual>
         <collision>
             <origin xyz="0.05 0 0"/>
             <geometry>
-                <box size="0.1 0.05 0.05"/>
+                <mesh filename="package://arm_urdf/meshes/shoulder.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
         <xacro:inertial_box mass="0.5" x="0.1" y="0.05" z="0.05">
@@ -82,7 +88,7 @@
     <joint name="bicept_joint" type="revolute">
         <parent link ="shoulder_link"/>
         <child link="bicept_link"/>
-        <origin xyz="0.1 0 0" rpy="0 ${pi/2} 0"/>
+        <origin xyz="0.125 0 0" rpy="0 ${pi/2} 0"/>
         <axis xyz="0 0 1" />
         <limit lower="${-pi/2}" upper="${pi/2}" velocity ="100" effort = "100"/>
     </joint>
@@ -90,16 +96,16 @@
 
     <link name = "bicept_link">
         <visual>
-            <origin xyz="0 0 0.1465"/>
+            <origin xyz="0 0 0.35" rpy="0 ${pi/2} 0"/>
             <geometry>
-                <box size="0.05 0.05 0.293"/>
+                <mesh filename="package://arm_urdf/meshes/bicept.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
             <material name="orange"/>
         </visual>
         <collision>
             <origin xyz="0 0 0.1465"/>
             <geometry>
-                <box size="0.05 0.05 0.293"/>
+                <mesh filename="package://arm_urdf/meshes/bicept.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
         <xacro:inertial_box mass = "3" x="0.05" y="0.05" z="0.293">
@@ -119,14 +125,14 @@
         <visual>
             <origin xyz="0.05 0 0"/>
             <geometry>
-                <box size="0.1 0.05 0.05"/>
+                <mesh filename="package://arm_urdf/meshes/elbow.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
             <origin xyz="0.05 0 0"/>
             <geometry>
-                <box size="0.1 0.05 0.05"/>
+                <mesh filename="package://arm_urdf/meshes/elbow.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
         <xacro:inertial_box mass ="0.6" x="0.1" y="0.05" z="0.05">
@@ -146,14 +152,14 @@
         <visual>
             <origin xyz="0 0 0.1"/>
             <geometry>
-                <box size="0.05 0.05 0.2"/>
+                <mesh filename="package://arm_urdf/meshes/forearm.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
             <material name="white"/>
         </visual>
         <collision>
             <origin xyz="0 0 0.1"/>
             <geometry>
-                <box size="0.05 0.05 0.2"/>
+                <mesh filename="package://arm_urdf/meshes/forearm.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
         <xacro:inertial_box mass ="2.5" x="0.05" y="0.05" z="0.2">
@@ -170,7 +176,13 @@
     </joint>
 
     <link name = "wrist_link1">
-       
+        <visual>
+            <origin xyz="0 0 0.1"/>
+            <geometry>
+                <mesh filename="package://arm_urdf/meshes/wrist_1.stl" scale="0.001 0.001 0.001 "/>
+            </geometry>
+            <material name="white"/>
+        </visual>
     </link>
 
     <joint name="wrist_joint2" type="revolute">
@@ -185,14 +197,14 @@
         <visual>
             <origin xyz="0 -0.5 0"/>
             <geometry>
-                <box size="0.02 1 0.02"/>
+                <mesh filename="package://arm_urdf/meshes/wrist_2.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
             <material name="orange"/>
         </visual>
         <collision>
             <origin xyz="0 -0.5 0"/>
             <geometry>
-                <box size="0.02 1 0.02"/>
+                <mesh filename="package://arm_urdf/meshes/wrist_2.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
         <xacro:inertial_box mass ="0.5" x="0.2" y="1" z="0.2">
@@ -221,6 +233,5 @@
             </geometry>
         </collision>
     </link>
-<!-- Hello hello even more hellos-->
 
 </robot>

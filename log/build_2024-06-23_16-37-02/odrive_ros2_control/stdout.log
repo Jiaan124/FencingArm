@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target odrive_ros2_control_plugin[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/odrive_ros2_control_plugin.dir/src/odrive_hardware_interface.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libodrive_ros2_control_plugin.so[0m
+[100%] Built target odrive_ros2_control_plugin
