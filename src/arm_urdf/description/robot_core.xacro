@@ -30,9 +30,9 @@
             <material name="white"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0.5"/>
+            <origin xyz="-0.6052 -0.31115 0"/>
             <geometry>
-                <box size="0.05 0.05 1"/>
+                <mesh filename="package://arm_urdf/meshes/base.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
     </link>
@@ -53,6 +53,12 @@
             </geometry>
             <material name="black"/>
         </visual>
+        <collision>
+            <origin xyz="-0.0425 -0.09775 -0.05"/>
+            <geometry>
+                <mesh filename="package://arm_urdf/meshes/shoulder_base.stl" scale="0.001 0.001 0.001 "/>
+            </geometry>
+        </collision>
     </link>
 
 
@@ -74,7 +80,7 @@
             <material name="blue"/>
         </visual>
         <collision>
-            <origin xyz="0.05 0 0"/>
+            <origin xyz="-0.05 -0.075 0.075" rpy ="0 ${pi/2} 0"/>
             <geometry>
                 <mesh filename="package://arm_urdf/meshes/shoulder.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
@@ -103,7 +109,7 @@
             <material name="orange"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0.1465"/>
+            <origin xyz="0.050 -0.060 0.383" rpy="0 ${pi/2} ${pi/2}"/>
             <geometry>
                 <mesh filename="package://arm_urdf/meshes/bicept.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
@@ -130,7 +136,7 @@
             <material name="blue"/>
         </visual>
         <collision>
-            <origin xyz="0.05 0 0"/>
+            <origin xyz="0.049 -0.04 -0.0286" rpy ="0 0 ${pi/2}"/>
             <geometry>
                 <mesh filename="package://arm_urdf/meshes/elbow.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
@@ -157,7 +163,7 @@
             <material name="orange"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0.1"/>
+            <origin xyz="0.042 -0.04 0.289" rpy ="0 ${pi/2} ${pi/2}"/>
             <geometry>
                 <mesh filename="package://arm_urdf/meshes/forearm.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
@@ -183,6 +189,12 @@
             </geometry>
             <material name="blue"/>
         </visual>
+        <collision>
+            <origin xyz="-0.05 -0.025 -0.02502" rpy="0 ${-pi/2} ${-pi/2} " />
+            <geometry>
+                <mesh filename="package://arm_urdf/meshes/wrist_1.stl" scale="0.001 0.001 0.001 "/>
+            </geometry>
+        </collision>
     </link>
 
     <joint name="wrist_joint2" type="revolute">
@@ -202,7 +214,7 @@
             <material name="orange"/>
         </visual>
         <collision>
-            <origin xyz="0 -0.5 0"/>
+            <origin xyz="0.0435 -0.0235 -0.0235" rpy="${-pi/2} ${-pi} 0"/>
             <geometry>
                 <mesh filename="package://arm_urdf/meshes/wrist_2.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
@@ -243,5 +255,9 @@
             </geometry>
         </collision>
     </link>
+
+
+    <xacro:include filename= "gazebo_control.xacro"/>
+
 
 </robot>

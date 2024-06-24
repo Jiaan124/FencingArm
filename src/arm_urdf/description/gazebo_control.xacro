@@ -1,22 +1,56 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-
     <gazebo>
+
+
+        <gazebo reference= "base_link">
+            <material>Gazebo/White</material>
+        </gazebo>
+        <gazebo reference= "shoulder_base">
+            <material>Gazebo/Black</material>
+        </gazebo>
+        <gazebo reference= "shoulder_link">
+            <material>Gazebo/Orange</material>
+        </gazebo>
+        <gazebo reference= "elbow_link">
+            <material>Gazebo/Blue</material>
+        </gazebo>
+        <gazebo reference= "forearm_link">
+            <material>Gazebo/Orange</material>
+        </gazebo>
+        <gazebo reference= "wrist_link1">
+            <material>Gazebo/Blue</material>
+        </gazebo>
+        <gazebo reference= "wrist_link2">
+            <material>Gazebo/Orange</material>
+        </gazebo>
+        <gazebo reference= "tip">
+            <material>Gazebo/White</material>
+        </gazebo>
+
+        
+    </gazebo>
+
+</robot>
+
+
+
+    <!-- <gazebo>
         <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
 
-            <!-- Wheel Information -->
+            Wheel Information 
             <left_joint>left_wheel_joint</left_joint>
             <right_joint>right_wheel_joint</right_joint>
             <wheel_separation>0.297</wheel_separation>
             <wheel_diameter>0.066</wheel_diameter>
 
 
-            <!-- Limits -->
+            Limits 
             <max_wheel_torque>200</max_wheel_torque>
             <max_wheel_acceleration>10.0</max_wheel_acceleration>
 
             
-            <!-- Output -->
+            Output 
             <odometry_frame>odom</odometry_frame>
             <robot_base_frame>base_link</robot_base_frame>
 
@@ -25,7 +59,4 @@
             <publish_wheel_tf>true</publish_wheel_tf>
 
         </plugin>
-    </gazebo>
-
-
-</robot>
+    </gazebo> -->
