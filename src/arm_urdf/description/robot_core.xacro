@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <xacro:include filename="inertial_macros.xacro"/>
     <material name="white">
@@ -35,7 +35,14 @@
                 <mesh filename="package://arm_urdf/meshes/base.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
+        <xacro:inertial_box mass ="40" x="0.6" y="0.6" z="0.5">
+            <origin xyz="-0.3 0 0.25" rpy= "0 0 0"/>
+        </xacro:inertial_box >
     </link>
+
+    <gazebo reference="base_link">
+        <material>Gazebo/White</material>
+    </gazebo>
 
     <!-- SETS THE HEIGHT OF THE ARM -->
     <joint name="base_joint" type="fixed">
@@ -59,8 +66,14 @@
                 <mesh filename="package://arm_urdf/meshes/shoulder_base.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
+        <xacro:inertial_box mass ="1" x="0.05" y="0.05" z="0.05">
+            <origin xyz="0 0 0.1" rpy= "0 0 0"/>
+        </xacro:inertial_box >
     </link>
 
+    <gazebo reference="shoulder_base">
+        <material>Gazebo/Black</material>
+    </gazebo>
 
    <joint name="shoulder_joint" type="revolute">
         <origin xyz="0 0 0" rpy="${pi/2} 0 0"/>    
@@ -85,11 +98,14 @@
                 <mesh filename="package://arm_urdf/meshes/shoulder.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
-        <xacro:inertial_box mass="0.5" x="0.1" y="0.05" z="0.05">
-            <origin xyz="0.05 0 0" rpy= "0 0 0"/>
+        <xacro:inertial_box mass="1" x="0.025" y="0.1" z="0.15">
+            <origin xyz="0.08 0 0" rpy= "0 0 0"/>
         </xacro:inertial_box >
-
     </link>
+
+    <gazebo reference="shoulder_link">
+        <material>Gazebo/Blue</material>
+    </gazebo>
 
     <joint name="bicept_joint" type="revolute">
         <parent link ="shoulder_link"/>
@@ -114,10 +130,14 @@
                 <mesh filename="package://arm_urdf/meshes/bicept.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
-        <xacro:inertial_box mass = "3" x="0.05" y="0.05" z="0.293">
-            <origin xyz="0 0 0.1465" rpy= "0 0 0"/>
+        <xacro:inertial_box mass = "2.2" x="0.075" y="0.075" z="0.343">
+            <origin xyz="0 0 0.195" rpy= "0 0 0"/>
         </xacro:inertial_box >
     </link>
+
+    <gazebo reference="bicept_link">
+        <material>Gazebo/Orange</material>
+    </gazebo>
 
     <joint name="elbow_joint" type="revolute">
         <parent link ="bicept_link"/>
@@ -141,10 +161,14 @@
                 <mesh filename="package://arm_urdf/meshes/elbow.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
-        <xacro:inertial_box mass ="0.6" x="0.1" y="0.05" z="0.05">
-            <origin xyz="0.05 0 0" rpy= "0 0 0"/>
+        <xacro:inertial_box mass ="0.5" x="0.03" y="0.07" z="0.07">
+            <origin xyz="0.03 0 0" rpy= "0 0 0"/>
         </xacro:inertial_box >
     </link>
+
+    <gazebo reference="elbow_link">
+        <material>Gazebo/Blue</material>
+    </gazebo>
 
     <joint name="forearm_joint" type="revolute">
         <parent link ="elbow_link"/>
@@ -168,10 +192,14 @@
                 <mesh filename="package://arm_urdf/meshes/forearm.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
-        <xacro:inertial_box mass ="2.5" x="0.05" y="0.05" z="0.2">
-            <origin xyz="0 0 0.1" rpy= "0 0 0"/>
+        <xacro:inertial_box mass ="1.5" x="0.07" y="0.07" z="0.22">
+            <origin xyz="0 0 0.13" rpy= "0 0 0"/>
         </xacro:inertial_box >
     </link>
+
+    <gazebo reference="forearm_link">
+        <material>Gazebo/Orange</material>
+    </gazebo>
 
     <joint name="wrist_joint1" type="revolute">
         <parent link ="forearm_link"/>
@@ -195,7 +223,14 @@
                 <mesh filename="package://arm_urdf/meshes/wrist_1.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
+        <xacro:inertial_box mass ="0.5" x="0.1" y="0.05" z="0.01">
+            <origin xyz="0 0 0.038" rpy= "0 0 0"/>
+        </xacro:inertial_box >
     </link>
+
+    <gazebo reference="wrist_link1">
+        <material>Gazebo/Blue</material>
+    </gazebo>
 
     <joint name="wrist_joint2" type="revolute">
         <parent link ="wrist_link1"/>
@@ -219,10 +254,14 @@
                 <mesh filename="package://arm_urdf/meshes/wrist_2.stl" scale="0.001 0.001 0.001 "/>
             </geometry>
         </collision>
-        <xacro:inertial_box mass ="0.5" x="0.2" y="1" z="0.2">
-            <origin xyz="0 -0.5 0" rpy= "0 0 0"/>
+        <xacro:inertial_box mass ="0.2" x="0.05" y="0.02" z="0.02">
+            <origin xyz="0.02 0 0" rpy= "0 0 0"/>
         </xacro:inertial_box >
     </link>
+
+    <gazebo reference="wrist_link2">
+        <material>Gazebo/Orange</material>
+    </gazebo>
 
     <joint name="tip_joint" type="fixed">
         <parent link ="wrist_link2"/>
@@ -239,25 +278,39 @@
             </geometry>
             <material name="white"/>
         </visual>
-
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="0.025 0.025 0.025"/>
+            </geometry>
+        </collision>
         <!-- BLADE -->
         <visual>
             <origin xyz="0 0.45 0"/>
             <geometry>
-                <box size="0.01 0.9 0.01" length="1"/>
+                <box size="0.01 0.9 0.01" />
             </geometry>
             <material name="white"/>
         </visual>
         <collision>
-            <origin xyz="0 0 0"/>
+            <origin xyz="0 0.45 0"/>
             <geometry>
-                <box size="0.05 0.05 0.05"/>
+                <box size="0.01 0.9 0.01" />
             </geometry>
         </collision>
+
+
+        <xacro:inertial_box mass ="0.5" x="0.01" y="0.9" z="0.01">
+            <origin xyz="0 0.45 0" rpy= "0 0 0"/>
+        </xacro:inertial_box >
     </link>
 
+    <gazebo reference="tip">
+        <material>Gazebo/Orange</material>
+        <mu1 value="0.001"/>
+        <mu2 value="0.001"/>
+    </gazebo>
 
-    <xacro:include filename= "gazebo_control.xacro"/>
 
 
 </robot>

@@ -31,6 +31,7 @@
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/online_async_launch.py
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/rplidar.launch.py
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/rsp.launch.py
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/terminal_commands.txt
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/worlds/empty.world
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/worlds/obstacles.world
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/base.stl

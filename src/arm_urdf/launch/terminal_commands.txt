@@ -1,0 +1,7 @@
+ros2 launch arm_urdf rsp.launch.py use_sim_time:=true
+ros2 launch gazebo_ros gazebo.launch.py
+ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name
+ros2 run joint_state_publisher_gui joint_state_publisher_gui
+ign service -s /world/empty/create --reqtype ignition.msgs.EntityFactory --reptype ignition.msgs.Boolean --timeout 1000 --req 'sdf_filename: "src/arm_urdf/description/arm.urdf", name: "urdf_model"'
+ros2 run xacro xacro -o output__file input_file
+ros2 launch arm_urdf launch_sim.launch.py
