@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target odrive_ros2_control_plugin[0m
+[100%] Built target odrive_ros2_control_plugin
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control//odrive_hardware_interface.xml
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/lib/libodrive_ros2_control_plugin.so
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.sh
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.dsv
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.sh
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.dsv
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.bash
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.sh
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.zsh
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.dsv
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/ament_index/resource_index/packages/odrive_ros2_control
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_ros2_control
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig.cmake
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig-version.cmake
+-- Symlinking: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/package.xml

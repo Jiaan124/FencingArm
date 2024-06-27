@@ -1,0 +1,66 @@
+[0.008s] Invoking command in '/home/jiaan/arm_project/build/arm_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/arm_urdf -- -j16 -l16
+[0.040s] Invoked command in '/home/jiaan/arm_project/build/arm_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/arm_urdf -- -j16 -l16
+[0.059s] Invoking command in '/home/jiaan/arm_project/build/arm_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jiaan/arm_project/build/arm_urdf
+[0.063s] -- Install configuration: ""
+[0.064s] -- Execute custom install script
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/ball_tracker_params_robot.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/ball_tracker_params_sim.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/drive_bot.rviz
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/empty.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/gaz_ros2_ctl_use_sim.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/gazebo_params.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/joystick.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/main.rviz
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/map.rviz
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/mapper_params_online_async.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/my_controllers.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/nav2_params.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/twist_mux.yaml
+[0.066s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/view_bot.rviz
+[0.066s] -- Symlinking: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/arm.urdf
+[0.071s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/camera.xacro
+[0.071s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/depth_camera.xacro
+[0.071s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/face.xacro
+[0.071s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/gazebo_control.xacro
+[0.071s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/inertial_macros.xacro
+[0.071s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/lidar.xacro
+[0.071s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/robot.urdf.xacro
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/robot_core.xacro
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/ros2_control.xacro
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/ball_tracker.launch.py
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/camera.launch.py
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/joystick.launch.py
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/launch_robot.launch.py
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/launch_sim.launch.py
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/localization_launch.py
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/navigation_launch.py
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/online_async_launch.py
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/rplidar.launch.py
+[0.072s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/rsp.launch.py
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/launch/terminal_commands.txt
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/worlds/empty.world
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/worlds/obstacles.world
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/base.stl
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/bicept.stl
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/elbow.stl
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/forearm.stl
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/shoulder.stl
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/shoulder_base.stl
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/wrist_1.stl
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/meshes/wrist_2.stl
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/ament_index/resource_index/package_run_dependencies/arm_urdf
+[0.073s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/ament_index/resource_index/parent_prefix_path/arm_urdf
+[0.074s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/environment/ament_prefix_path.sh
+[0.074s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/environment/ament_prefix_path.dsv
+[0.074s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/environment/path.sh
+[0.074s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/environment/path.dsv
+[0.074s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/local_setup.bash
+[0.074s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/local_setup.sh
+[0.074s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/local_setup.zsh
+[0.074s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/local_setup.dsv
+[0.074s] -- Symlinking: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/package.dsv
+[0.078s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/ament_index/resource_index/packages/arm_urdf
+[0.078s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/cmake/arm_urdfConfig.cmake
+[0.079s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/cmake/arm_urdfConfig-version.cmake
+[0.079s] -- Up-to-date symlink: /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/package.xml
+[0.080s] Invoked command in '/home/jiaan/arm_project/build/arm_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jiaan/arm_project/build/arm_urdf

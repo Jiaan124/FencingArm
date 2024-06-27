@@ -3,30 +3,7 @@
     <gazebo>
 
 
-        <gazebo reference= "base_link">
-            <material>Gazebo/White</material>
-        </gazebo>
-        <gazebo reference= "shoulder_base">
-            <material>Gazebo/Black</material>
-        </gazebo>
-        <gazebo reference= "shoulder_link">
-            <material>Gazebo/Orange</material>
-        </gazebo>
-        <gazebo reference= "elbow_link">
-            <material>Gazebo/Blue</material>
-        </gazebo>
-        <gazebo reference= "forearm_link">
-            <material>Gazebo/Orange</material>
-        </gazebo>
-        <gazebo reference= "wrist_link1">
-            <material>Gazebo/Blue</material>
-        </gazebo>
-        <gazebo reference= "wrist_link2">
-            <material>Gazebo/Orange</material>
-        </gazebo>
-        <gazebo reference= "tip">
-            <material>Gazebo/White</material>
-        </gazebo>
+
 
         
     </gazebo>

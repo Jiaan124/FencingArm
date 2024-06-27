@@ -1,5 +1,1 @@
-uint32 control_mode
-uint32 input_mode
-float32 input_pos
-float32 input_vel
-float32 input_torque
+/home/jiaan/arm_project/src/ros_odrive/odrive_node/msg/ControlMessage.msg

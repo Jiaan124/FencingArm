@@ -1,0 +1,4 @@
+Invoking command in '/home/jiaan/arm_project/build/arm_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/arm_urdf -- -j16 -l16
+Invoked command in '/home/jiaan/arm_project/build/arm_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/arm_urdf -- -j16 -l16
+Invoking command in '/home/jiaan/arm_project/build/arm_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jiaan/arm_project/build/arm_urdf
+Invoked command in '/home/jiaan/arm_project/build/arm_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jiaan/arm_project/build/arm_urdf

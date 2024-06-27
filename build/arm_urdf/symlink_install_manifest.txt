@@ -12,6 +12,7 @@
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/nav2_params.yaml
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/twist_mux.yaml
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/config/view_bot.rviz
+/home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/arm.urdf
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/camera.xacro
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/depth_camera.xacro
 /home/jiaan/arm_project/install/arm_urdf/share/arm_urdf/description/face.xacro

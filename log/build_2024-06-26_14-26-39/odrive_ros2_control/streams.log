@@ -1,0 +1,44 @@
+[0.009s] Invoking command in '/home/jiaan/arm_project/build/odrive_ros2_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control -DCMAKE_INSTALL_PREFIX=/home/jiaan/arm_project/install/odrive_ros2_control
+[0.021s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.099s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.109s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.135s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.138s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.144s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.153s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.165s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.209s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.211s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.236s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.347s] -- Found ament_cmake_auto: 1.3.9 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.792s] -- Configuring done
+[0.821s] -- Generating done
+[0.822s] -- Build files have been written to: /home/jiaan/arm_project/build/odrive_ros2_control
+[0.827s] Invoked command in '/home/jiaan/arm_project/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiaan/arm_project/src/ros_odrive/odrive_ros2_control -DCMAKE_INSTALL_PREFIX=/home/jiaan/arm_project/install/odrive_ros2_control
+[0.830s] Invoking command in '/home/jiaan/arm_project/build/odrive_ros2_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/odrive_ros2_control -- -j16 -l16
+[0.854s] [35m[1mConsolidate compiler generated dependencies of target odrive_ros2_control_plugin[0m
+[0.866s] [100%] Built target odrive_ros2_control_plugin
+[0.874s] Invoked command in '/home/jiaan/arm_project/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/odrive_ros2_control -- -j16 -l16
+[0.891s] Invoking command in '/home/jiaan/arm_project/build/odrive_ros2_control': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jiaan/arm_project/build/odrive_ros2_control
+[0.896s] -- Install configuration: ""
+[0.896s] -- Execute custom install script
+[0.896s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control//odrive_hardware_interface.xml
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/lib/libodrive_ros2_control_plugin.so
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/ament_index/resource_index/package_run_dependencies/odrive_ros2_control
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/ament_index/resource_index/parent_prefix_path/odrive_ros2_control
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.sh
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/environment/ament_prefix_path.dsv
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.sh
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/environment/path.dsv
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.bash
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.sh
+[0.897s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.zsh
+[0.898s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/local_setup.dsv
+[0.898s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/package.dsv
+[0.898s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/ament_index/resource_index/packages/odrive_ros2_control
+[0.898s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/odrive_ros2_control
+[0.898s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.898s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig.cmake
+[0.898s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/cmake/odrive_ros2_controlConfig-version.cmake
+[0.898s] -- Up-to-date symlink: /home/jiaan/arm_project/install/odrive_ros2_control/share/odrive_ros2_control/package.xml
+[0.900s] Invoked command in '/home/jiaan/arm_project/build/odrive_ros2_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jiaan/arm_project/build/odrive_ros2_control
