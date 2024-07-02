@@ -17,3 +17,6 @@ moveit_simple_controller_manager:
       - forearm_joint
       - wrist_joint1
       - wrist_joint2
+      - tip_joint
+    action_ns: follow_joint_trajectory
+    default: true
