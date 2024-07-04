@@ -1,12 +1,12 @@
 {
   "package_name": "odrive_can",
-  "output_dir": "/home/jiaan/arm_project/build/odrive_can/rosidl_generator_cpp/odrive_can",
+  "output_dir": "/home/jiaan/FencingArm/build/odrive_can/rosidl_generator_cpp/odrive_can",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl",
-    "/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl",
-    "/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl",
-    "/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl"
+    "/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl",
+    "/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl",
+    "/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl",
+    "/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -24,9 +24,9 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can/msg/ControlMessage.idl",
-    "/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can/msg/ControllerStatus.idl",
-    "/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can/msg/ODriveStatus.idl",
-    "/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can/srv/AxisState.idl"
+    "/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can/msg/ControlMessage.idl",
+    "/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can/msg/ControllerStatus.idl",
+    "/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can/msg/ODriveStatus.idl",
+    "/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can/srv/AxisState.idl"
   ]
 }

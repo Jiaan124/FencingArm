@@ -1,9 +1,9 @@
 {
   "package_name": "odrive_can",
   "non_idl_tuples": [
-    "/home/jiaan/arm_project/src/ros_odrive/odrive_node:msg/ControlMessage.msg",
-    "/home/jiaan/arm_project/src/ros_odrive/odrive_node:msg/ControllerStatus.msg",
-    "/home/jiaan/arm_project/src/ros_odrive/odrive_node:msg/ODriveStatus.msg",
-    "/home/jiaan/arm_project/src/ros_odrive/odrive_node:srv/AxisState.srv"
+    "/home/jiaan/FencingArm/src/ros_odrive/odrive_node:msg/ControlMessage.msg",
+    "/home/jiaan/FencingArm/src/ros_odrive/odrive_node:msg/ControllerStatus.msg",
+    "/home/jiaan/FencingArm/src/ros_odrive/odrive_node:msg/ODriveStatus.msg",
+    "/home/jiaan/FencingArm/src/ros_odrive/odrive_node:srv/AxisState.srv"
   ]
 }

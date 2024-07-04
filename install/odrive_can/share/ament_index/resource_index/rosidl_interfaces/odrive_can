@@ -1,1 +1,10 @@
-/home/jiaan/arm_project/build/odrive_can/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/odrive_can
+msg/ControlMessage.idl
+msg/ControlMessage.msg
+msg/ControllerStatus.idl
+msg/ControllerStatus.msg
+msg/ODriveStatus.idl
+msg/ODriveStatus.msg
+srv/AxisState.idl
+srv/AxisState.srv
+srv/AxisState_Request.msg
+srv/AxisState_Response.msg

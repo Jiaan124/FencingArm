@@ -1,1 +1,1 @@
-/home/jiaan/arm_project/build/moveit_config/ament_cmake_core/moveit_configConfig-version.cmake
+/home/jiaan/FencingArm/build/moveit_config/ament_cmake_core/moveit_configConfig-version.cmake

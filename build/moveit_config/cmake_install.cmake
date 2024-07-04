@@ -1,8 +1,8 @@
-# Install script for directory: /home/jiaan/arm_project/src/moveit_config
+# Install script for directory: /home/jiaan/FencingArm/src/moveit_config
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jiaan/arm_project/install/moveit_config")
+  set(CMAKE_INSTALL_PREFIX "/home/jiaan/FencingArm/install/moveit_config")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/jiaan/arm_project/build/moveit_config/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/jiaan/FencingArm/build/moveit_config/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jiaan/arm_project/build/moveit_config/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jiaan/FencingArm/build/moveit_config/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

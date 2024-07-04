@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/jiaan/arm_project/install/arm_urdf/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/jiaan/FencingArm/install/arm_urdf/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/jiaan/arm_project/install/arm_urdf/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/jiaan/FencingArm/install/arm_urdf/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/jiaan/arm_project/install/arm_urdf/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/jiaan/FencingArm/install/arm_urdf/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/jiaan/arm_project/install/arm_urdf/${destination}")
+      set(destination "/home/jiaan/FencingArm/install/arm_urdf/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,46 +311,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "config" "description" "launch" "worlds" "meshes" "DESTINATION" "share/arm_urdf")
-ament_cmake_symlink_install_directory("/home/jiaan/arm_project/src/arm_urdf" DIRECTORY "config" "description" "launch" "worlds" "meshes" "DESTINATION" "share/arm_urdf")
+ament_cmake_symlink_install_directory("/home/jiaan/FencingArm/src/arm_urdf" DIRECTORY "config" "description" "launch" "worlds" "meshes" "DESTINATION" "share/arm_urdf")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arm_urdf" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arm_urdf" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arm_urdf" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/arm_urdf" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arm_urdf" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arm_urdf" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arm_urdf" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/arm_urdf" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/arm_urdf/environment")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/arm_urdf/environment")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/arm_urdf/environment")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/arm_urdf/environment")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/arm_urdf/environment")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/arm_urdf/environment")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/arm_urdf/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/arm_urdf/environment")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/arm_urdf/environment")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/arm_urdf/environment")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/arm_urdf/environment")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/arm_urdf/environment")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/arm_urdf/environment")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/arm_urdf/environment")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/arm_urdf")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/arm_urdf")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/arm_urdf")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/arm_urdf")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/arm_urdf")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/arm_urdf")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/arm_urdf")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/arm_urdf")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/arm_urdf")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/arm_urdf")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/arm_urdf")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/arm_urdf")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/arm_urdf")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/arm_urdf")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/arm_urdf")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/arm_urdf")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/arm_urdf")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/arm_urdf")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/arm_urdf")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/arm_urdf")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/packages/arm_urdf" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/packages/arm_urdf" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/packages/arm_urdf" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_index/share/ament_index/resource_index/packages/arm_urdf" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_core/arm_urdfConfig.cmake" "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_core/arm_urdfConfig-version.cmake" "DESTINATION" "share/arm_urdf/cmake")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_core/arm_urdfConfig.cmake" "/home/jiaan/arm_project/build/arm_urdf/ament_cmake_core/arm_urdfConfig-version.cmake" "DESTINATION" "share/arm_urdf/cmake")
+# install(FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_core/arm_urdfConfig.cmake" "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_core/arm_urdfConfig-version.cmake" "DESTINATION" "share/arm_urdf/cmake")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_core/arm_urdfConfig.cmake" "/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_core/arm_urdfConfig-version.cmake" "DESTINATION" "share/arm_urdf/cmake")
 
-# install(FILES "/home/jiaan/arm_project/src/arm_urdf/package.xml" "DESTINATION" "share/arm_urdf")
-ament_cmake_symlink_install_files("/home/jiaan/arm_project/src/arm_urdf" FILES "/home/jiaan/arm_project/src/arm_urdf/package.xml" "DESTINATION" "share/arm_urdf")
+# install(FILES "/home/jiaan/FencingArm/src/arm_urdf/package.xml" "DESTINATION" "share/arm_urdf")
+ament_cmake_symlink_install_files("/home/jiaan/FencingArm/src/arm_urdf" FILES "/home/jiaan/FencingArm/src/arm_urdf/package.xml" "DESTINATION" "share/arm_urdf")

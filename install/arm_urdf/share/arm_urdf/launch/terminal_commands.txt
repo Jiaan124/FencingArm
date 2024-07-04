@@ -1,1 +1,1 @@
-/home/jiaan/arm_project/src/arm_urdf/launch/terminal_commands.txt
+/home/jiaan/FencingArm/src/arm_urdf/launch/terminal_commands.txt

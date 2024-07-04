@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jiaan/arm_project/src/ros_odrive/odrive_node
+CMAKE_SOURCE_DIR = /home/jiaan/FencingArm/src/ros_odrive/odrive_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jiaan/arm_project/build/odrive_can
+CMAKE_BINARY_DIR = /home/jiaan/FencingArm/build/odrive_can
 
 # Include any dependencies generated for this target.
 include CMakeFiles/odrive_can_node.dir/depend.make
@@ -69,74 +69,74 @@ include CMakeFiles/odrive_can_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/odrive_can_node.dir/flags.make
 
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o: CMakeFiles/odrive_can_node.dir/flags.make
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o: /home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o: CMakeFiles/odrive_can_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiaan/arm_project/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o -MF CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o.d -o CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o -c /home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o: CMakeFiles/odrive_can_node.dir/flags.make
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o: /home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o: CMakeFiles/odrive_can_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiaan/FencingArm/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o -MF CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o.d -o CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o -c /home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp
 
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp > CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.i
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp > CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.i
 
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp -o CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.s
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp -o CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.s
 
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o: CMakeFiles/odrive_can_node.dir/flags.make
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o: /home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o: CMakeFiles/odrive_can_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiaan/arm_project/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o -MF CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o.d -o CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o -c /home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.o: CMakeFiles/odrive_can_node.dir/flags.make
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.o: /home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.o: CMakeFiles/odrive_can_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiaan/FencingArm/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.o -MF CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.o.d -o CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.o -c /home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp
 
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp > CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.i
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp > CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.i
 
-CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp -o CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.s
+CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp -o CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.s
 
 CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o: CMakeFiles/odrive_can_node.dir/flags.make
-CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o: /home/jiaan/arm_project/src/ros_odrive/odrive_node/src/odrive_can_node.cpp
+CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o: /home/jiaan/FencingArm/src/ros_odrive/odrive_node/src/odrive_can_node.cpp
 CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o: CMakeFiles/odrive_can_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiaan/arm_project/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o -MF CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o.d -o CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o -c /home/jiaan/arm_project/src/ros_odrive/odrive_node/src/odrive_can_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiaan/FencingArm/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o -MF CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o.d -o CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o -c /home/jiaan/FencingArm/src/ros_odrive/odrive_node/src/odrive_can_node.cpp
 
 CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiaan/arm_project/src/ros_odrive/odrive_node/src/odrive_can_node.cpp > CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiaan/FencingArm/src/ros_odrive/odrive_node/src/odrive_can_node.cpp > CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.i
 
 CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiaan/arm_project/src/ros_odrive/odrive_node/src/odrive_can_node.cpp -o CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiaan/FencingArm/src/ros_odrive/odrive_node/src/odrive_can_node.cpp -o CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.s
 
 CMakeFiles/odrive_can_node.dir/src/main.cpp.o: CMakeFiles/odrive_can_node.dir/flags.make
-CMakeFiles/odrive_can_node.dir/src/main.cpp.o: /home/jiaan/arm_project/src/ros_odrive/odrive_node/src/main.cpp
+CMakeFiles/odrive_can_node.dir/src/main.cpp.o: /home/jiaan/FencingArm/src/ros_odrive/odrive_node/src/main.cpp
 CMakeFiles/odrive_can_node.dir/src/main.cpp.o: CMakeFiles/odrive_can_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiaan/arm_project/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/odrive_can_node.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/odrive_can_node.dir/src/main.cpp.o -MF CMakeFiles/odrive_can_node.dir/src/main.cpp.o.d -o CMakeFiles/odrive_can_node.dir/src/main.cpp.o -c /home/jiaan/arm_project/src/ros_odrive/odrive_node/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jiaan/FencingArm/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/odrive_can_node.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/odrive_can_node.dir/src/main.cpp.o -MF CMakeFiles/odrive_can_node.dir/src/main.cpp.o.d -o CMakeFiles/odrive_can_node.dir/src/main.cpp.o -c /home/jiaan/FencingArm/src/ros_odrive/odrive_node/src/main.cpp
 
 CMakeFiles/odrive_can_node.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odrive_can_node.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiaan/arm_project/src/ros_odrive/odrive_node/src/main.cpp > CMakeFiles/odrive_can_node.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jiaan/FencingArm/src/ros_odrive/odrive_node/src/main.cpp > CMakeFiles/odrive_can_node.dir/src/main.cpp.i
 
 CMakeFiles/odrive_can_node.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odrive_can_node.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiaan/arm_project/src/ros_odrive/odrive_node/src/main.cpp -o CMakeFiles/odrive_can_node.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jiaan/FencingArm/src/ros_odrive/odrive_node/src/main.cpp -o CMakeFiles/odrive_can_node.dir/src/main.cpp.s
 
 # Object files for target odrive_can_node
 odrive_can_node_OBJECTS = \
-"CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o" \
-"CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o" \
+"CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o" \
+"CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.o" \
 "CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o" \
 "CMakeFiles/odrive_can_node.dir/src/main.cpp.o"
 
 # External object files for target odrive_can_node
 odrive_can_node_EXTERNAL_OBJECTS =
 
-odrive_can_node: CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o
-odrive_can_node: CMakeFiles/odrive_can_node.dir/home/jiaan/arm_project/src/ros_odrive/odrive_base/src/socket_can.cpp.o
+odrive_can_node: CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/epoll_event_loop.cpp.o
+odrive_can_node: CMakeFiles/odrive_can_node.dir/home/jiaan/FencingArm/src/ros_odrive/odrive_base/src/socket_can.cpp.o
 odrive_can_node: CMakeFiles/odrive_can_node.dir/src/odrive_can_node.cpp.o
 odrive_can_node: CMakeFiles/odrive_can_node.dir/src/main.cpp.o
 odrive_can_node: CMakeFiles/odrive_can_node.dir/build.make
@@ -188,7 +188,7 @@ odrive_can_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 odrive_can_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 odrive_can_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 odrive_can_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-odrive_can_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+odrive_can_node: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 odrive_can_node: /opt/ros/humble/lib/libtracetools.so
 odrive_can_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 odrive_can_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
@@ -196,7 +196,7 @@ odrive_can_node: /opt/ros/humble/lib/librcpputils.so
 odrive_can_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 odrive_can_node: /opt/ros/humble/lib/librcutils.so
 odrive_can_node: CMakeFiles/odrive_can_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jiaan/arm_project/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable odrive_can_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jiaan/FencingArm/build/odrive_can/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable odrive_can_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/odrive_can_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -208,6 +208,6 @@ CMakeFiles/odrive_can_node.dir/clean:
 .PHONY : CMakeFiles/odrive_can_node.dir/clean
 
 CMakeFiles/odrive_can_node.dir/depend:
-	cd /home/jiaan/arm_project/build/odrive_can && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiaan/arm_project/src/ros_odrive/odrive_node /home/jiaan/arm_project/src/ros_odrive/odrive_node /home/jiaan/arm_project/build/odrive_can /home/jiaan/arm_project/build/odrive_can /home/jiaan/arm_project/build/odrive_can/CMakeFiles/odrive_can_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jiaan/FencingArm/build/odrive_can && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiaan/FencingArm/src/ros_odrive/odrive_node /home/jiaan/FencingArm/src/ros_odrive/odrive_node /home/jiaan/FencingArm/build/odrive_can /home/jiaan/FencingArm/build/odrive_can /home/jiaan/FencingArm/build/odrive_can/CMakeFiles/odrive_can_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/odrive_can_node.dir/depend
 

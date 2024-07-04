@@ -1,1 +1,1 @@
-/home/jiaan/arm_project/src/moveit_config/launch/static_virtual_joint_tfs.launch.py
+/home/jiaan/FencingArm/src/moveit_config/launch/static_virtual_joint_tfs.launch.py

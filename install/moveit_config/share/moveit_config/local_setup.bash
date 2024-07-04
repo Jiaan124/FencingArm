@@ -1,1 +1,1 @@
-/home/jiaan/arm_project/build/moveit_config/ament_cmake_environment_hooks/local_setup.bash
+/home/jiaan/FencingArm/build/moveit_config/ament_cmake_environment_hooks/local_setup.bash

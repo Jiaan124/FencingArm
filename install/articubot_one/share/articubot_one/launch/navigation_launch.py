@@ -1,1 +1,0 @@
-/home/jiaan/arm_project/src/articubot_one/launch/navigation_launch.py

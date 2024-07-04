@@ -1,1 +1,4 @@
-/home/jiaan/arm_project/build/odrive_can/rosidl_cmake/srv/AxisState_Response.msg
+
+uint32 active_errors
+uint8 axis_state
+uint8 procedure_result

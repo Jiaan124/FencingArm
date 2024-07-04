@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jiaan/arm_project/src/ros_odrive/odrive_node
+CMAKE_SOURCE_DIR = /home/jiaan/FencingArm/src/ros_odrive/odrive_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jiaan/arm_project/build/odrive_can
+CMAKE_BINARY_DIR = /home/jiaan/FencingArm/build/odrive_can
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/jiaan/arm_project/build/odrive_can && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiaan/arm_project/src/ros_odrive/odrive_node /home/jiaan/arm_project/src/ros_odrive/odrive_node /home/jiaan/arm_project/build/odrive_can /home/jiaan/arm_project/build/odrive_can /home/jiaan/arm_project/build/odrive_can/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jiaan/FencingArm/build/odrive_can && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiaan/FencingArm/src/ros_odrive/odrive_node /home/jiaan/FencingArm/src/ros_odrive/odrive_node /home/jiaan/FencingArm/build/odrive_can /home/jiaan/FencingArm/build/odrive_can /home/jiaan/FencingArm/build/odrive_can/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -1,1 +1,1 @@
-/home/jiaan/arm_project/build/arm_urdf/ament_cmake_environment_hooks/local_setup.bash
+/home/jiaan/FencingArm/build/arm_urdf/ament_cmake_environment_hooks/local_setup.bash

@@ -1,1 +1,1 @@
-/home/jiaan/arm_project/build/odrive_can/ament_cmake_python/odrive_can/odrive_can.egg-info/top_level.txt
+odrive_can

@@ -1,1 +1,0 @@
-/home/jiaan/arm_project/build/odrive_ros2_control/ament_cmake_environment_hooks/local_setup.sh

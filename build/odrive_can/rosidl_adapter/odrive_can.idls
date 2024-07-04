@@ -1,4 +1,4 @@
-/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl
-/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl
-/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl
-/home/jiaan/arm_project/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl
+/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl
+/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl
+/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl
+/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl

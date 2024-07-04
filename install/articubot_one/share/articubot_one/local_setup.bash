@@ -1,1 +1,0 @@
-/home/jiaan/arm_project/build/articubot_one/ament_cmake_environment_hooks/local_setup.bash

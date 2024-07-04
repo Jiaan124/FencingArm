@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jiaan/arm_project/src/arm_urdf
+CMAKE_SOURCE_DIR = /home/jiaan/FencingArm/src/arm_urdf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jiaan/arm_project/build/arm_urdf
+CMAKE_BINARY_DIR = /home/jiaan/FencingArm/build/arm_urdf
 
 # Utility rule file for arm_urdf_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/arm_urdf_uninstall.dir/compiler_depend.make
 include CMakeFiles/arm_urdf_uninstall.dir/progress.make
 
 CMakeFiles/arm_urdf_uninstall:
-	/usr/bin/cmake -P /home/jiaan/arm_project/build/arm_urdf/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/jiaan/FencingArm/build/arm_urdf/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 arm_urdf_uninstall: CMakeFiles/arm_urdf_uninstall
 arm_urdf_uninstall: CMakeFiles/arm_urdf_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/arm_urdf_uninstall.dir/clean:
 .PHONY : CMakeFiles/arm_urdf_uninstall.dir/clean
 
 CMakeFiles/arm_urdf_uninstall.dir/depend:
-	cd /home/jiaan/arm_project/build/arm_urdf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiaan/arm_project/src/arm_urdf /home/jiaan/arm_project/src/arm_urdf /home/jiaan/arm_project/build/arm_urdf /home/jiaan/arm_project/build/arm_urdf /home/jiaan/arm_project/build/arm_urdf/CMakeFiles/arm_urdf_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jiaan/FencingArm/build/arm_urdf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiaan/FencingArm/src/arm_urdf /home/jiaan/FencingArm/src/arm_urdf /home/jiaan/FencingArm/build/arm_urdf /home/jiaan/FencingArm/build/arm_urdf /home/jiaan/FencingArm/build/arm_urdf/CMakeFiles/arm_urdf_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/arm_urdf_uninstall.dir/depend
 

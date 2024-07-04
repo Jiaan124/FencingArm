@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jiaan/arm_project/src/arm_urdf
+CMAKE_SOURCE_DIR = /home/jiaan/FencingArm/src/arm_urdf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jiaan/arm_project/build/arm_urdf
+CMAKE_BINARY_DIR = /home/jiaan/FencingArm/build/arm_urdf
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaan/arm_project/build/arm_urdf/CMakeFiles /home/jiaan/arm_project/build/arm_urdf//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaan/FencingArm/build/arm_urdf/CMakeFiles /home/jiaan/FencingArm/build/arm_urdf//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaan/arm_project/build/arm_urdf/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiaan/FencingArm/build/arm_urdf/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -1,1 +1,1 @@
-/home/jiaan/arm_project/src/moveit_config/launch/warehouse_db.launch.py
+/home/jiaan/FencingArm/src/moveit_config/launch/warehouse_db.launch.py
