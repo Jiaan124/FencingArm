@@ -1,1 +1,0 @@
-/home/jiaan/FencingArm/src/moveit_config/launch/moveit_rviz.launch.py

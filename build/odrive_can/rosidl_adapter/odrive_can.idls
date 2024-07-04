@@ -1,4 +1,0 @@
-/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:msg/ControlMessage.idl
-/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:msg/ControllerStatus.idl
-/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:msg/ODriveStatus.idl
-/home/jiaan/FencingArm/build/odrive_can/rosidl_adapter/odrive_can:srv/AxisState.idl

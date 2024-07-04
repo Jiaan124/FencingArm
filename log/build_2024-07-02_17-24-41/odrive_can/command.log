@@ -1,6 +1,0 @@
-Invoking command in '/home/jiaan/arm_project/build/odrive_can': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiaan/arm_project/src/ros_odrive/odrive_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jiaan/arm_project/install/odrive_can
-Invoked command in '/home/jiaan/arm_project/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jiaan/arm_project/src/ros_odrive/odrive_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jiaan/arm_project/install/odrive_can
-Invoking command in '/home/jiaan/arm_project/build/odrive_can': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/odrive_can -- -j16 -l16
-Invoked command in '/home/jiaan/arm_project/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jiaan/arm_project/build/odrive_can -- -j16 -l16
-Invoking command in '/home/jiaan/arm_project/build/odrive_can': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jiaan/arm_project/build/odrive_can
-Invoked command in '/home/jiaan/arm_project/build/odrive_can' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jiaan/arm_project/build/odrive_can
