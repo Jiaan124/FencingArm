@@ -119,7 +119,7 @@
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
             <!-- Tells where to find controller information for Ros2 -->
-            <parameters>$(find arm_urdf)/config/my_controllers.yaml</parameters>
+            <parameters>$(find moveit_config)/config/ros2_controllers.yaml</parameters>
 
             
             <!-- <parameters>$(find arm_urdf)/config/gaz_ros2_ctl_use_sim.yaml</parameters> -->

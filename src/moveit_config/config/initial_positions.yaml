@@ -2,7 +2,7 @@
 
 initial_positions:
   bicept_joint: 0
-  elbow_joint: 0
+  elbow_joint: 1
   forearm_joint: 0
   shoulder_joint: 0
   wrist_joint1: 0

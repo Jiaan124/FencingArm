@@ -2,6 +2,8 @@
 controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
+    use_sim_time: true
+
 
     arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
@@ -11,7 +13,7 @@ controller_manager:
       type: position_controllers/GripperActionController
 
 
-    joint_state_broadcaster:
+    joint_broad:
       type: joint_state_broadcaster/JointStateBroadcaster
 
 arm_controller:
@@ -28,6 +30,7 @@ arm_controller:
     state_interfaces:
       - position
       - velocity
+    action_monitor_rate: 20.0
 tip_controller:
   ros__parameters:
     joints:

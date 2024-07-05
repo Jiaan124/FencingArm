@@ -12,8 +12,21 @@ ign service -s /world/empty/create --reqtype ignition.msgs.EntityFactory --repty
 ROS2 CONTROL
 ros2 run xacro xacro -o arm.urdf robot.urdf.xacro
 ros2 run controller_manager ros2_control_node
+ros2 run controller_manager spawner.py joint_trajectory_controller
+ros2 run controller_manager spawner.py joint_broad
+
 ros2 control list_hardware_interfaces
 
 
-
+ros2 param set /move_group use_sim_time true
 ros2 run joint_state_publisher_gui joint_state_publisher_gui
+
+
+
+
+July 5 setup setup steps
+1. ros2 launch moveit_config demo.launch.py
+2. ros2 launch gazebo_ros gazebo.launch.py
+3. ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name
+4. ros2 run controller_manager spawner joint_trajectory_controller
+5. ros2 run controller_manager spawner joint_broad
