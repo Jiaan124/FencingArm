@@ -2,6 +2,8 @@ LAUNCH FILES
 ros2 launch arm_urdf rsp.launch.py use_sim_time:=true
 ros2 launch arm_urdf launch_sim.launch.py
 ros2 launch gazebo_ros gazebo.launch.py
+ros2 launch moveit_config demo.launch.py
+ros2 launch moveit_setup_assistant setup_assistant.launch.py
 
 GAZEBO RELATED
 ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name

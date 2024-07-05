@@ -74,11 +74,11 @@ def generate_launch_description():
 
     # Launch them all!
     return LaunchDescription([
-        rsp,
+        #rsp,
         gazebo,
         spawn_entity,        
         # joystick,
         # # twist_mux, 
-        joint_trajectory_controller_spawner,
-        joint_broad_spawner,
+        #joint_trajectory_controller_spawner,
+        #joint_broad_spawner,
     ])
