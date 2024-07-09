@@ -3,17 +3,35 @@
     <xacro:macro name="robot_ros2_control" params="name initial_positions_file">
         <xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"/>
 
-        <ros2_control name="${name}" type="system">
-            <hardware>
-                <!-- By default, set up controllers for simulation. This won't work on real hardware -->
-                <plugin>gazebo_ros2_control/GazeboSystem</plugin>
-                <!-- <plugin>mock_components/GenericSystem</plugin> -->
+        <!-- CHANGE VALUE TO "false" IF USING REAL HARDWARE -->
+        <xacro:property name="use_sim" value="false"/>
 
+
+        <ros2_control name="${name}" type="system">
+          <xacro:unless value="${use_sim}">
+            <hardware>
+              <plugin>odrive_ros2_control_plugin/ODriveHardwareInterface</plugin>
+              <param name="can">can0</param>
             </hardware>
+          </xacro:unless>
+
+          <xacro:if value="${use_sim}">
+            <hardware>
+              <!-- By default, set up controllers for simulation. This won't work on real hardware -->
+              <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+              <!-- <plugin>mock_components/GenericSystem</plugin> -->
+          </hardware>
+          </xacro:if>
+
+
+
+
+            <!-- JOINT DETAILS -->
             <joint name="shoulder_joint">
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['shoulder_joint']}</param>
+                  <param name="node_id">0</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
@@ -21,6 +39,7 @@
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['bicept_joint']}</param>
+                  <param name="node_id">1</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
@@ -28,6 +47,7 @@
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['elbow_joint']}</param>
+                  <param name="node_id">2</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
@@ -35,6 +55,7 @@
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['forearm_joint']}</param>
+                  <param name="node_id">3</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
@@ -42,6 +63,7 @@
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['wrist_joint1']}</param>
+                  <param name="node_id">4</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
@@ -49,12 +71,14 @@
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['wrist_joint2']}</param>
+                  <param name="node_id">5</param>
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
 
         </ros2_control>
 
+        <!-- ONLY NEEDED FOR GAZEBO -->
         <gazebo>
           <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
               <!-- Tells where to find controller information for Ros2 -->
