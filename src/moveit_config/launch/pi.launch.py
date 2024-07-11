@@ -28,7 +28,7 @@ def generate_launch_description():
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
             PathJoinSubstitution(
-                [FindPackageShare("odrive_botwheel_explorer"), "urdf", "diffbot.urdf.xacro"]
+                [FindPackageShare("moveit_config"), "config", "robot.urdf.xacro"]
             ),
 #            " ",
 #            "use_mock_hardware:=",
@@ -39,9 +39,9 @@ def generate_launch_description():
 
     robot_controllers = PathJoinSubstitution(
         [
-            FindPackageShare("odrive_botwheel_explorer"),
+            FindPackageShare("moveit_config"),
             "config",
-            "diffbot_controllers.yaml",
+            "ros2_controllers.yaml",
         ]
     )
 #    rviz_config_file = PathJoinSubstitution(
@@ -62,9 +62,9 @@ def generate_launch_description():
         executable="robot_state_publisher",
         output="both",
         parameters=[robot_description],
-        remappings=[
-            ("/botwheel_explorer/cmd_vel_unstamped", "/cmd_vel"),
-        ],
+        # remappings=[
+        #     ("/botwheel_explorer/cmd_vel_unstamped", "/cmd_vel"),
+        # ],
     )
 #    rviz_node = Node(
 #        package="rviz2",
@@ -78,13 +78,13 @@ def generate_launch_description():
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+        arguments=["joint_broad", "--controller-manager", "/controller_manager"],
     )
 
     robot_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["botwheel_explorer", "--controller-manager", "/controller_manager"],
+        arguments=["arm_controller", "--controller-manager", "/controller_manager"],
     )
 
 #    # Delay rviz start after `joint_state_broadcaster`

@@ -1,36 +1,33 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:macro name="robot_ros2_control" params="name initial_positions_file">
-        <xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"/>
+    <!-- <xacro:macro name="robot_ros2_control" params="name initial_positions_file"> -->
+    <!-- <xacro:macro name="robot_ros2_control" params="name"> -->
+    <!-- <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+        <xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"/> -->
 
         <!-- CHANGE VALUE TO "false" IF USING REAL HARDWARE -->
-        <xacro:property name="use_sim" value="false"/>
 
 
-        <ros2_control name="${name}" type="system">
-          <xacro:unless value="${use_sim}">
+        <ros2_control name="odrive_control" type="system">
             <hardware>
-              <plugin>odrive_ros2_control_plugin/ODriveHardwareInterface</plugin>
+              <!-- <plugin>odrive_ros2_control_plugin/ODriveHardwareInterface</plugin> -->
               <param name="can">can0</param>
+
+              <!-- <plugin>gazebo_ros2_control/GazeboSystem</plugin> -->
+              <plugin>mock_components/GenericSystem</plugin>
             </hardware>
-          </xacro:unless>
-
-          <xacro:if value="${use_sim}">
-            <hardware>
-              <!-- By default, set up controllers for simulation. This won't work on real hardware -->
-              <plugin>gazebo_ros2_control/GazeboSystem</plugin>
-              <!-- <plugin>mock_components/GenericSystem</plugin> -->
-          </hardware>
-          </xacro:if>
 
 
+
+          
 
 
             <!-- JOINT DETAILS -->
             <joint name="shoulder_joint">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['shoulder_joint']}</param>
+                  <!-- <param name="initial_value">${initial_positions['shoulder_joint']}</param> -->
+                  <param name="initial_value">0.0</param>                  
                   <param name="node_id">0</param>
                 </state_interface>
                 <state_interface name="velocity"/>
@@ -38,7 +35,8 @@
             <joint name="bicept_joint">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['bicept_joint']}</param>
+                  <!-- <param name="initial_value">${initial_positions['bicept_joint']}</param> -->
+                  <param name="initial_value">0.0</param>                            
                   <param name="node_id">1</param>
                 </state_interface>
                 <state_interface name="velocity"/>
@@ -46,7 +44,8 @@
             <joint name="elbow_joint">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['elbow_joint']}</param>
+                  <!-- <param name="initial_value">${initial_positions['elbow_joint']}</param> -->
+                  <param name="initial_value">0.0</param>
                   <param name="node_id">2</param>
                 </state_interface>
                 <state_interface name="velocity"/>
@@ -54,7 +53,8 @@
             <joint name="forearm_joint">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['forearm_joint']}</param>
+                  <!-- <param name="initial_value">${initial_positions['forearm_joint']}</param> -->
+                  <param name="initial_value">0.0</param>
                   <param name="node_id">3</param>
                 </state_interface>
                 <state_interface name="velocity"/>
@@ -62,7 +62,8 @@
             <joint name="wrist_joint1">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['wrist_joint1']}</param>
+                  <!-- <param name="initial_value">${initial_positions['wrist_joint1']}</param> -->
+                  <param name="initial_value">0.0</param>
                   <param name="node_id">4</param>
                 </state_interface>
                 <state_interface name="velocity"/>
@@ -70,7 +71,8 @@
             <joint name="wrist_joint2">
                 <command_interface name="position"/>
                 <state_interface name="position">
-                  <param name="initial_value">${initial_positions['wrist_joint2']}</param>
+                  <!-- <param name="initial_value">${initial_positions['wrist_joint2']}</param> -->
+                  <param name="initial_value">0.0</param>
                   <param name="node_id">5</param>
                 </state_interface>
                 <state_interface name="velocity"/>
@@ -89,7 +91,7 @@
           </plugin>
       </gazebo>
 
-    </xacro:macro>
+    <!-- </xacro:macro> -->
 
 
 </robot>

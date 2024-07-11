@@ -3,12 +3,15 @@
     <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
 
     <!-- Import robot urdf file -->
-    <xacro:include filename="$(find arm_urdf)/description/arm.urdf" />
+    <xacro:include filename="$(find moveit_config)/config/robot_core.xacro" />
 
     <!-- Import control_xacro -->
-    <xacro:include filename="robot.ros2_control.xacro" />
+    <xacro:include filename="$(find moveit_config)/config/robot.ros2_control.xacro" />
 
 
-    <xacro:robot_ros2_control name="Gazebo" initial_positions_file="$(arg initial_positions_file)"/>
+    <!-- <xacro:robot_ros2_control name="Gazebo" initial_positions_file="$(arg initial_positions_file)"/> -->
+    <!-- <xacro:robot/> -->
 
+    <!-- <xacro:robot_ros2_control
+        name="odrive_control"/> -->
 </robot>
